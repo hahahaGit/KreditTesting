@@ -48,7 +48,7 @@
 
    <th>Email</th>
 
-   
+   <th>Role</th>
 
    <th width="280px">Action</th>
 
@@ -63,6 +63,13 @@
     <td>{{ $user->name }}</td>
 
     <td>{{ $user->email }}</td>
+    
+    <td>
+    @foreach($user->getRoleNames() as $role)
+          {{ $role }}
+     @endforeach
+     
+    </td>
      
     
     
