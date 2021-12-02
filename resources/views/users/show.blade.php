@@ -51,8 +51,22 @@
         </div>
 
     </div>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+
+        <div class="form-group">
+
+            <strong>Role:</strong>
+
+@foreach($user->getRoleNames() as $role)
+          {{ $role }}
+     @endforeach
 
    
+        </div>
+
+    </div>
+    
+    
 
 </div>
 
